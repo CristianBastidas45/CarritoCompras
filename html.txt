@@ -1,0 +1,50 @@
+html += `
+        <div id="${id}" class="cart__product">
+            <figure class="cart__product__img">
+                <img src="${image}" alt="image product">
+            </figure>
+            <div class="cart__product__container">
+                <p class="cart__product__description">
+                    <span>Categoria:</span> ${category}<br>
+                    <span>precio:</span> $${price} USD<br>
+                    <span>Cantidad:</span> ${quantity} Units<br>
+                </p>
+                <div class="cart__product__buttons">
+                    <ion-icon class="less" name="remove-circle-outline"></ion-icon>
+                    <span>${amount}</span>
+                    <ion-icon class="plus" name="add-circle-outline"></ion-icon>
+                    <ion-icon class="trash" name="trash-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        `;
+
+*****
+
+https://ecommercebackend.fundamentos-29.repl.co/
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+******
+let html = `
+        <p><span>Cantidad:</span> ${cantidad}</p>
+        <p><span>Total:</span> $${totales}</p>
+    `;
+
+*******
+html = `
+                <div class="modal__product">
+                    <figure class="modal__product__img">
+                        <img src="${image}" alt="image product">
+                    </figure>
+                    <p class="modal__product__short">
+                        <span>Categoria:</span> ${category}<br>
+                        <span>precio:</span> $${price} USD<br>
+                        <span>Cantidad:</span> ${quantity} Units<br>
+                    </p>
+                </div>
+                <p class="modal__product__long">
+                    <span>Nombre:</span> ${name}<br>
+                    <span>Descripción:</span> ${description}<br>
+                </p>`;
+********
